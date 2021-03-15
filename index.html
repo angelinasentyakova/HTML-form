@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+   <head>
+    <title>HTML-form</title>
+      <link rel="stylesheet" href="css/style.css">
+      <meta charset="UTF-8">
+      </head>
+
+   <body>
+
+        <div class="form">
+           <form method="post" action="https://digital-spectr.com/ac/academy.php" class="form__body">
+             <h1 class="form__title">Задать вопрос</h1>
+               <div class="form__item">
+               <input type="text" name="name" placeholder="Фамилия Имя Отчество *" class="form__input" pattern= "^[А-Яа-яЁё\s\-]+$" title="Имя может содержать только русские буквы, пробелы и тире" required>
+               </div>
+               <div class="form__item">
+               <input type="tel" name="phone" placeholder="Телефон *" class="form__input" pattern="^[ 0-9\-\+]+$" title="Телефон может содержать только цифры, пробелы, '-' и '+'" autofocus required>
+               </div>
+               <div class="form__item">
+               <input type="email" name="email" placeholder="Email" class="form__input" pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})">
+               </div>
+            
+             <button type="submit" class="form__button">Отправить запрос</button>
+           </form>       
+          </div>
+
+  <style>
+  ::-webkit-input-placeholder {color:#DCDCDC; opacity:1;}/* webkit */
+  ::-moz-placeholder          {color:#DCDCDC; opacity:1;}/* Firefox 19+ */
+  :-moz-placeholder           {color:#DCDCDC; opacity:1;}/* Firefox 18- */
+  :-ms-input-placeholder      {color:#DCDCDC; opacity:1;}/* IE */
+  </style>  
+  
+ 
+   </body>
+</html>
